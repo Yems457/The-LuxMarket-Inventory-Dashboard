@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>LuxMarket Dashboard</title>
+</head>
+<body class="bg-slate-50 antialiased font-sans">
+
+    <div class="min-h-screen lg:flex">
+        
+        <aside class="w-64 bg-gray-900 text-white p-4 grid-cols-3 grid-cols-[auto,1fr]">
+            <div class="text-2xl font-bold mb-10">LuxMarket</div>
+            <nav class="space-y-2">
+                <a href="#" class="block p-2 bg-slate-800 rounded">Dashboard</a>
+                <a href="#" class="block p-2 hover:bg-slate-800 rounded">Products</a>
+            </nav>
+        </aside>
+
+        <div class="flex-1">
+            <header class="bg-white border-b p-4 flex justify-between items-center sticky top-0 z-10">
+                 <input type="search" placeholder="Search products...." class="border rounded-lg px-4 py-2 w-64">
+                 <!-- Product ID/SKU -->
+                <h1 class="text-xl font-mono">Product Inventory</h1>
+            
+            </header>
+
+            <main class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    
+                    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+                        <div class="h-48 bg-slate-200"></div> <div class="p-4">
+                            <span class="text-xl font-bold text-indigo-600 uppercase tracking-wide">Furniture</span>
+                            <!-- Product Names -->
+                            <h3 class="text-lg font-semibold text-slate-900 font-semibold mt-1">Minimalist Oak Chair</h3>
+                            <div class="text-lg font-semibold text-slate-900 text-slate-500 truncate mt-2">Handcrafted oak wood with ergonomic support and premium finish.</div>
+                            <div class="mt-4 flex justify-between items-center">
+                              <span class="text-xs font-medium uppercase tracking-widest text-indigo-600">$249.00</span>
+                                <span class="text-xs font-medium uppercase tracking-widest text-indigo-600 inline-flex items-center px-2.5 py-0.5">IN STOCK</span>
+                                <span class="text-xs font-medium uppercase tracking-widest text-indigo-600 inline-flex items-center px-2.5 py-0.5">Low STOCK</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+<footer id="footer-section"></footer>
+
+      <div class="footer-section flex justify-between items-center">
+        
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm items-center hover:bg-green-700 transition shadow-md">Add to Cart</button>  
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm items-center hover:bg-green-700 transition shadow-md">Price</button>
+       
+    </footer>
+</body>
+</html>
